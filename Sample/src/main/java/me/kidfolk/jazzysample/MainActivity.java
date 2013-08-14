@@ -51,6 +51,8 @@ public class MainActivity extends Activity {
 	private void setupJazziness(TransitionEffect effect) {
 		mJazzy = (JazzyViewPager) findViewById(R.id.jazzy_pager);
 		mJazzy.setTransitionEffect(effect);
+    mJazzy.setOutlineEnabled(true);
+    mJazzy.setOutlineColor(Color.GREEN);
 		mJazzy.setAdapter(new MainAdapter());
 		mJazzy.setPageMargin(30);
 	}
